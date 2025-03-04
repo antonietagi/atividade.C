@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+ //3. Faça um programa que calcule e imprima o menor de três números.
+ int a, menor, i;
+ 
+ 
+ for(i=1; i<=3; i++){
+  printf("Digite um número (não repita o mesmo num:");
+  scanf("%d", &a);
+  
+  if( a < menor ){
+   menor = a;
+  }
+ }
+ 
+ printf("O menor número é o: %d", menor);
+ 
+}
+
