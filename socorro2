@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+  
+
+  
+    printf("Disciplina.....:");
+    fgets(aluno.disciplina,30,stdin);
+    
+    printf("Informe a primeira nota:");
+    scanf("%lf", &aluno.nota_prova1);
+    
+    printf("Informe a segunda nota:");
+    scanf("%lf", &aluno.nota_prova2);
+    
+    printf("\n\n --------- Lendo os dados da struct ---------\n\n");
+    printf("Nome........: %s", aluno.nome);
+    printf("Disciplina........: %.2f\n", aluno.disciplina);
+    printf("Nota da Prova.........: %.2f\n", aluno.nota_prova1);
+    printf("Nota da segunda Prova..........: %.2f", aluno.nota_prova2);
+    
+    
+    
+    return 0;
+}
