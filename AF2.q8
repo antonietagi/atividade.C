@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+    struct Aluno {
+    char matricula[10];
+    char nome[100];
+    char curso[100];
+    int cpf[25];
+   };
+   
+   int main() {
+    struct Aluno aluno1;
+    
+    printf("Informe a matrícula do aluno:");
+    fgets(aluno1.matricula, 10, stdin);
+    
+    printf("Informe o nome do aluno:");
+    fgets(aluno1.nome, 100, stdin);
+    
+    printf("Informe o curso do aluno:");
+    fgets(aluno1.curso, 100, stdin);
+    
+    printf("Informe o cpf do aluno:");
+    fgets(aluno1.cpf, 25, stdin);
+    
+    printf("====Dados do Alunos====");
+    
+    printf("Matrícula: %s\n", aluno1.matricula);
+    printf("Nome: %s\n", aluno1.nome);
+    printf("Curso: %s\n", aluno1.curso);
+    printf("CPF: %d\n", aluno1.cpf);
+    
+    return 0;
+   }
+
