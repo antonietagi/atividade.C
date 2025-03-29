@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void imprimeImpar(int numero);
+
+int main() {
+    int numero;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);  // Corrigir para passar o endereço de 'numero'
+
+    imprimeImpar(numero);   // Passar o 'numero' como argumento para a função
+    return 0;
+}
+
+void imprimeImpar(int numero) {
+    for (int i = 1; i <= numero; i++) {  // Começar o loop de 1 até 'numero'
+        if (i % 2 != 0) {  // Verificar se 'i' é ímpar
+            printf("%d ", i);  // Imprimir o número ímpar
+        }
+    }
+}
