@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int Func(int, int);
+
+int main() {
+    int n1, n2, x;
+    scanf("%d", &n1);  // Lê o valor de n1
+    scanf("%d", &n2);  // Lê o valor de n2
+
+    x = Func(n1, n2);  // Chama a função Func
+    printf("%d", x);   // Imprime o resultado
+    return 0;
+}
+
+int Func(int n1, int n2) {
+    if (n1 > n2) {
+        return (n1 - n2);  // Se n1 for maior que n2, retorna a diferença
+    } else {
+        if (n1 == n2) {
+            return n1 + n2;  // Se n1 for igual a n2, retorna a soma
+        } else {
+            return (n1 + 5);  // Se n1 for menor que n2, retorna n1 + 5
+        }
+    }
+}
