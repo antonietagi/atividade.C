@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+ void verificaParImpar(int num);
+ 
+ int main () {
+  int numero;
+  
+  printf("Digite um número: ");
+  scanf("%d", &numero);
+  
+  verificaParImpar(numero);
+  return 0;
+ }
+ 
+ void verificaParImpar(int num) {
+  if(num % 2 ==0) {
+   printf("Par");
+  }else{
+   printf("Ímpar");
+  }
+ }
