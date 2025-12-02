@@ -1,2 +1,2 @@
-# atividade.C
+# Atividades.C
 Atividade de Linguagem C
